@@ -19,5 +19,5 @@ app.get("/",(req,res)=>{
 app.use(router);
 
 app.listen(port, () => {
-    console.log(`server is start port number ${port}`);
+    console.log(`server is running on  port number ${port}`);
 });
