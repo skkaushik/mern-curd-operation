@@ -15,11 +15,8 @@ const Edit = () => {
     const [inpval, setINP] = useState({
         name: "",
         email: "",
-        age: "",
-        mobile: "",
-        work: "",
-        add: "",
-        desc: ""
+        mobile: ""
+        
     })
 
     const setdata = (e) => {
@@ -69,7 +66,7 @@ const Edit = () => {
     const updateuser = async(e)=>{
         e.preventDefault();
 
-        const {name,email,work,add,mobile,desc,age} = inpval;
+        const {name,email,mobile} = inpval;
 
         const res2 = await fetch(`http://localhost:8000/updateuser/${id}`,{
             method: "PATCH",
@@ -77,7 +74,7 @@ const Edit = () => {
                 "Content-Type": "application/json"
             },
             body:JSON.stringify({
-                name,email,work,add,mobile,desc,age
+                name,email,mobile
             })
         });
 
@@ -106,15 +103,15 @@ const Edit = () => {
                         <label for="exampleInputPassword1" class="form-label">email</label>
                         <input type="email" value={inpval.email} onChange={setdata} name="email" class="form-control" id="exampleInputPassword1" />
                     </div>
-                    <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    {/* <div class="mb-3 col-lg-6 col-md-6 col-12">
                         <label for="exampleInputPassword1" class="form-label">age</label>
                         <input type="text" value={inpval.age} onChange={setdata} name="age" class="form-control" id="exampleInputPassword1" />
-                    </div>
+                    </div> */}
                     <div class="mb-3 col-lg-6 col-md-6 col-12">
                         <label for="exampleInputPassword1" class="form-label">Mobile</label>
                         <input type="number" value={inpval.mobile} onChange={setdata} name="mobile" class="form-control" id="exampleInputPassword1" />
                     </div>
-                    <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    {/* <div class="mb-3 col-lg-6 col-md-6 col-12">
                         <label for="exampleInputPassword1" class="form-label">Work</label>
                         <input type="text" value={inpval.work} onChange={setdata} name="work" class="form-control" id="exampleInputPassword1" />
                     </div>
@@ -125,7 +122,7 @@ const Edit = () => {
                     <div class="mb-3 col-lg-12 col-md-12 col-12">
                         <label for="exampleInputPassword1" class="form-label">Description</label>
                         <textarea name="desc" value={inpval.desc} onChange={setdata} className="form-control" id="" cols="30" rows="5"></textarea>
-                    </div>
+                    </div> */}
 
                     <button type="submit" onClick={updateuser} class="btn btn-primary">Submit</button>
                 </div>

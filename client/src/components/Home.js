@@ -71,7 +71,7 @@ const Home = () => {
 
     return (
 
-        <>
+        <div>
             {
                 udata ?
                     <>
@@ -114,7 +114,7 @@ const Home = () => {
                                 <th scope="col">id</th>
                                 <th scope="col">Username</th>
                                 <th scope="col">email</th>
-                                <th scope="col">Job</th>
+                                {/* <th scope="col">Job</th> */}
                                 <th scope="col">Number</th>
                                 <th scope="col"></th>
                             </tr>
@@ -129,7 +129,7 @@ const Home = () => {
                                                 <th scope="row">{id + 1}</th>
                                                 <td>{element.name}</td>
                                                 <td>{element.email}</td>
-                                                <td>{element.work}</td>
+                                                {/* <td>{element.work}</td> */}
                                                 <td>{element.mobile}</td>
                                                 <td className="d-flex justify-content-between">
                                                     <NavLink to={`view/${element._id}`}> <button className="btn btn-success"><RemoveRedEyeIcon /></button></NavLink>
@@ -147,7 +147,7 @@ const Home = () => {
 
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

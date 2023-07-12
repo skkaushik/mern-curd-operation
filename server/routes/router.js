@@ -14,7 +14,7 @@ router.post("/register",async(req,res)=>{
     // console.log(req.body);
     const {name,email,age,mobile,work,add,desc} = req.body;
 
-    if(!name || !email || !age || !mobile || !work || !add || !desc){
+    if(!name || !email ||!mobile){
         res.status(422).json("plz fill the data");
     }
 
