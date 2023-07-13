@@ -133,7 +133,7 @@ const Home = () => {
                 <th scope="col">Email</th>
                 
                 <th scope="col">Number</th>
-                <th scope="col">View</th>
+                <th scope="col"></th>
               </tr>
             </thead>
             <tbody>
