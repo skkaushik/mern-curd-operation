@@ -121,7 +121,7 @@ const Home = () => {
         <div className="container">
           <div className="add_btn mt-2 mb-2">
             <NavLink to="/register" className="btn btn-primary">
-              Add data
+              Add User
             </NavLink>
           </div>
 
@@ -133,7 +133,7 @@ const Home = () => {
                 <th scope="col">Email</th>
                 
                 <th scope="col">Number</th>
-                <th scope="col"></th>
+                <th scope="col">View</th>
               </tr>
             </thead>
             <tbody>
