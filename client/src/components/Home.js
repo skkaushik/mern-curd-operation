@@ -128,9 +128,9 @@ const Home = () => {
           <table class="table">
             <thead>
               <tr className="table-dark">
-                <th scope="col">id</th>
-                <th scope="col">Username</th>
-                <th scope="col">email</th>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
                 
                 <th scope="col">Number</th>
                 <th scope="col"></th>
