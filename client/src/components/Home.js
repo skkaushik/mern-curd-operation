@@ -61,61 +61,7 @@ const Home = () => {
 
   return (
     <div>
-      {udata ? (
-        <>
-          <div
-            class="alert alert-success alert-dismissible fade show"
-            role="alert"
-          >
-            <strong>{udata.name}</strong> added succesfully!
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Close"
-            ></button>
-          </div>
-        </>
-      ) : (
-        ""
-      )}
-      {updata ? (
-        <>
-          <div
-            class="alert alert-success alert-dismissible fade show"
-            role="alert"
-          >
-            <strong>{updata.name}</strong> updated succesfully!
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Close"
-            ></button>
-          </div>
-        </>
-      ) : (
-        ""
-      )}
-
-      {dltdata ? (
-        <>
-          <div
-            class="alert alert-danger alert-dismissible fade show"
-            role="alert"
-          >
-            <strong>{dltdata.name}</strong> deleted succesfully!
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Close"
-            ></button>
-          </div>
-        </>
-      ) : (
-        ""
-      )}
+      
 
       <div className="mt-5">
         <div className="container">
